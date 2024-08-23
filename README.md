@@ -1,7 +1,7 @@
 # Aplicativo Help Desk
 
 Projeto final do módulo 'Seção 13: Linguagem de Programação PHP (Hypertext Preprocessor' do curso Desenvolvimento Web Completo, encontrado na Udemy. 
-Este projeto é um aplicativo dinâmico de criação e consultas de chamados.
+Este projeto é um aplicativo dinâmico de criação e consulta de chamados.
 
 ## Requisitos para o Ambiente de Desenvolvimento
 - Instalação do _XAMPP_, software responsável por criar um servidor local.
