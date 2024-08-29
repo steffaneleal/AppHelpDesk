@@ -1,4 +1,10 @@
 <?php 
+    //iniciando o recurso de sessão
+    session_start(); //importante que seja executado sempre antes de alguma instrução que emita alguma saída de dados para o navegador (tipo o echo) 
+
+    // $_SESSION['x'] = 'Oi, sou um valor de sessão'; //pode criar valores para o $_SESSION (que é um array) em tempo de execução
+    // print_r($_SESSION);
+
     //variável que verifica se a autenticação foi realizada
     $usuario_autenticado = false; //ela é declarada como false pq vai ser verdadeiro apenas se passar na condição do primeiro if (estar autenticado)
 
@@ -26,8 +32,10 @@
     }
 
     if($usuario_autenticado){
-        header('Location: home.php');
+        echo "Usuário autenticado";
+        $_SESSION['autenticado'] = 'SIM';
     }else{
+        $_SESSION['autenticado'] = 'NAO';
         header('Location: index.php?login=erro'); //função que retorna uma página, nesse caso a função vai levar de volta para o index pq não foi possível ser autenticado
     }
 

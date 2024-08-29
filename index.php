@@ -35,6 +35,12 @@
                     </div>
                 <?php } ?> <!-- fechamento do if do bloco de php anterior  -->
                      
+                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2'){ ?>
+                    <div class="text-danger" style="color: red; font-size: small;">
+                        Faça login antes de acessar as páginas protegidas
+                    </div>
+                <?php } ?> <!-- fechamento do if do bloco de php anterior -->
+
                 <input class="form-button" type="submit" value="Entrar">
             </form>
         </section>
