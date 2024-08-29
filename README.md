@@ -3,6 +3,15 @@
 Projeto final do módulo 'Seção 13: Linguagem de Programação PHP (Hypertext Preprocessor' do curso Desenvolvimento Web Completo, encontrado na Udemy. 
 Este projeto é um aplicativo dinâmico de criação e consulta de chamados.
 
+## O projeto conta com: 
+- Formulários com autenticação de usuários (local)
+- Páginas restritas protegidas
+- Navegação entre páginas
+- Encerramento de sessão (logoff)
+- Registro de chamados
+- Consulta de chamados
+- Controle de perfil de usuários
+
 ## Requisitos para o Ambiente de Desenvolvimento
 - Instalação do _XAMPP_, software responsável por criar um servidor local.
 - Após a instalação do _XAMPP_ (pasta na raiz), colar esse repositório dentro da pasta htdocs.
@@ -15,15 +24,6 @@ xampp -> htdocs
   - 'email' => 'adm@teste.com.br', 'senha' => '123456'
 - Usuário 2
   - 'email' => 'user@teste.com.br', 'senha' => 'abcd'
-
-## O projeto conta com: 
-- Formulários com autenticação de usuários (local)
-- Páginas restritas protegidas
-- Navegação entre páginas
-- Encerramento de sessão (logoff)
-- Registro de chamados
-- Consulta de chamados
-- Controle de perfil de usuários
 
 ## Linguagens Utilizadas
 - PHP
