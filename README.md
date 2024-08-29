@@ -5,6 +5,11 @@ Este projeto é um aplicativo dinâmico de criação e consulta de chamados.
 
 ## O projeto conta com: 
 - Formulários com autenticação de usuários (local)
+    ##### Usuário e senhas para autenticação:
+    - Usuário 1
+    - 'email' => 'adm@teste.com.br', 'senha' => '123456'
+    - Usuário 2
+    - 'email' => 'user@teste.com.br', 'senha' => 'abcd'
 - Páginas restritas protegidas
 - Navegação entre páginas
 - Encerramento de sessão (logoff)
@@ -19,11 +24,7 @@ Este projeto é um aplicativo dinâmico de criação e consulta de chamados.
 ## Localização da pasta _htdocs_
 xampp -> htdocs
 
-## Usuário e senhas para autenticação:
-- Usuário 1
-  - 'email' => 'adm@teste.com.br', 'senha' => '123456'
-- Usuário 2
-  - 'email' => 'user@teste.com.br', 'senha' => 'abcd'
+
 
 ## Linguagens Utilizadas
 - PHP
