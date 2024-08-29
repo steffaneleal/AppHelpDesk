@@ -16,10 +16,20 @@ xampp -> htdocs
 - Usuário 2
   - 'email' => 'user@teste.com.br', 'senha' => 'abcd'
 
+## O projeto conta com: 
+- Formulários com autenticação de usuários (local)
+- Páginas restritas protegidas
+- Navegação entre páginas
+- Encerramento de sessão (logoff)
+- Registro de chamados
+- Consulta de chamados
+- Controle de perfil de usuários
+
 ## Linguagens Utilizadas
 - PHP
 - HTML
 - CSS
+- JavaScript
 
 ##  Link do Repositório
  [Repositório](https://github.com/steffaneleal/AppHelpDesk/)
