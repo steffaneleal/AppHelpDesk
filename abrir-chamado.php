@@ -17,7 +17,6 @@
         </div>
         <a class="header-left" href="index.php">SAIR</a>
     </header>
-
     <main>
         <section id="main-form">
             <div class="form-abertura-chamado">
