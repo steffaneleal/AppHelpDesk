@@ -18,18 +18,18 @@ Este projeto é um aplicativo dinâmico de criação e consulta de chamados.
 - Consulta de chamados
 - Controle de perfil de usuários
 
+## Linguagens Utilizadas
+- PHP
+- HTML
+- CSS
+- JavaScript
+
 ## Requisitos para o Ambiente de Desenvolvimento
 - Instalação do _XAMPP_, software responsável por criar um servidor local.
 - Após a instalação do _XAMPP_ (pasta na raiz), colar esse repositório dentro da pasta htdocs.
 
 ## Localização da pasta _htdocs_
 xampp -> htdocs
-
-## Linguagens Utilizadas
-- PHP
-- HTML
-- CSS
-- JavaScript
 
 ##  Link do Repositório
  [Repositório](https://github.com/steffaneleal/AppHelpDesk/)
