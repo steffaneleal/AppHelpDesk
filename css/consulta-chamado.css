@@ -34,17 +34,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1rem 1rem 1rem   ;
+    padding: 0 1rem 1rem 1rem;
+    border: blue solid 0.1rem;
 }
 
-.consultas-button{
+.voltar-button{
     width: 49%;
     height: 3rem;
     margin-top: 3rem;
 
     border-radius: 0.3rem;
     background-color: #fdc008;
+    color: #FFF;
     border: #fdc008 solid 0.1rem;
     cursor: pointer;
+}
+
+.consultas-button:hover{
+    opacity: 80%;
 }
 

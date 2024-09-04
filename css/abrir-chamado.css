@@ -60,6 +60,9 @@ form > input{
 
 .form-descricao{
     height: 4rem;
+    border-radius: 0.3rem;
+    border: #e9e9e9 solid 0.1rem;
+    color: gray;
 }
 
 .form-buttons{
@@ -72,17 +75,29 @@ form > input{
 .form-buttons1, .form-buttons2{
     width: 49%;
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0.3rem;
     cursor: pointer;
 }
 
 .form-buttons1{
     background-color: #fdc008;
+    color: #FFF;
     border: #fdc008 solid 0.1rem;
+}
+
+.form-buttons1:hover{
+    opacity: 80%;
 }
 
 .form-buttons2{
     background-color: #18a3b6;
     color: #FFF;
     border: #18a3b6 solid 0.1rem;
+}
+
+.form-buttons2:hover{
+    opacity: 80%;    
 }

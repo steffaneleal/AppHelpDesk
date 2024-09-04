@@ -1,13 +1,4 @@
-<?php 
-    session_start();
-
-    //se $_SESSION['autenticado'] não existe ou for diferente de 'SIM', redireciona pro index.php
-    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM'){
-        //força o redirecionamento da página
-        header('Location: index.php?login=erro2'); //mudei para erro2 pra tratar de jeito diferente do erro que aparece quando usuário ou senha é inválido
-    }
-    
-?>
+<?php require_once("validador_acesso.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +23,7 @@
             <div class="form-abertura-chamado">
                 <h2>Abertura de chamado</h2>
             </div>
-            <form action="<?=$_SERVER["PHP_SELF"]?>" method="post">
+            <form action="registra_chamado.php" method="post">
                 <label class="form-label" for="titulo">Título</label>
                 <input class="form-titulo" type="text" name="titulo" id="titulo" placeholder="Título">
                 <label class="form-label" for="categoria">Categoria</label>
@@ -44,9 +35,9 @@
                     <option value="rede">Rede</option>
                 </select>
                 <label class="form-label" for="descricao">Descrição</label>
-                <input class="form-descricao" type="text" placeholder="Descrição">
+                <textarea name="descricao" id="descricao" class="form-descricao" rows="3"></textarea>
                 <div class="form-buttons">
-                    <input class="form-buttons1" type="submit" value="Voltar">    
+                    <a class="form-buttons1" href="home.php">Voltar</a>    
                     <input class="form-buttons2" type="submit" value="Abrir">
                 </div>
             </form>

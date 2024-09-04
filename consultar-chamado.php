@@ -1,14 +1,4 @@
-<?php 
-    session_start();
-
-    //se $_SESSION['autenticado'] não existe ou for diferente de 'SIM', redireciona pro index.php
-    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM'){
-        //força o redirecionamento da página
-        header('Location: index.php?login=erro2'); //mudei para erro2 pra tratar de jeito diferente do erro que aparece quando usuário ou senha é inválido
-    }
-    
-?>
-
+<?php require_once("validador_acesso.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +14,7 @@
     <header id="header">
         <div class="header-right">    
             <img src="assets/logo.png" alt="">
-            <a href="index.php"><h2>App Help Desk</h2></a>
+            <h2>App Help Desk</h2>
         </div>
         <a class="header-left" href="index.php">SAIR</a>
     </header>
@@ -34,7 +24,7 @@
                 <h2>Consulta de chamado</h2>
             </div>
             <div class="consultas">
-                <a href="home.php"><input class="consultas-button" type="submit" value="Voltar"></a>
+                <a class="voltar-button" href="home.php">Voltar</a>
             </div>
         </section>
     </main>
