@@ -1,4 +1,23 @@
 <?php require_once("validador_acesso.php"); ?>
+
+<?php 
+    //chamados
+    $chamados = array();
+
+    //abrir o arquivo.hd
+    $arquivo = fopen('arquivo.hd', 'r'); //mudamos o parâmetro de 'a' para 'r' pq aqui queremos apenas ler
+
+    //enquanto houver registros (linhas) a serem recuperados
+    while(!feof($arquivo)){ //feof testa pelo fim de um arquivo (EOF - END OF FILE)
+        //linhas
+        $registro = fgets($arquivo); //já que estamos recuperando cada uma das linhas do arquivo, precisamos atribuí-las a uma variável para que possam ser recuperadas depois
+        $chamados[] = $registro;
+    }
+
+    //fechar o arquivo aberto
+    fclose($arquivo);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,44 +43,29 @@
                 <h2>Consulta de chamado</h2>
             </div>
             <div class="consulta-cards">
-                <div class="consulta-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do chamado...</h5>
-                        <h6 class="card-subtitle">Categoria</h6>
-                        <p class="card-text">Descrição do chamado...</p>
+                <?php foreach($chamados as $chamado){ ?>
+
+                    <?php
+                        $chamado_dados = explode('#', $chamado);
+
+                        if(count($chamado_dados) < 3){
+                            continue;
+                        }
+                    ?>
+                    <div class="consulta-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $chamado_dados[0]?></h5>
+                            <h6 class="card-subtitle"><?php echo $chamado_dados[1]?></h6>
+                            <p class="card-text"><?php echo $chamado_dados[2]?></p>
+                        </div>
                     </div>
-                </div>
-                <div class="consulta-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do chamado...</h5>
-                        <h6 class="card-subtitle">Categoria</h6>
-                        <p class="card-text">Descrição do chamado...</p>
-                    </div>
-                </div>
+
+                <?php }?>
             </div>
             <div class="consultas">
                 <a class="voltar-button" href="home.php">Voltar</a>
             </div>
         </section>
     </main>
-    <script>
-        let chamadosAbertos = false;
-
-        window.onload = function(){
-            const consultaCards = document.querySelectorAll('.consulta-card');
-
-            //Esconder todos os cards inicialmente
-            consultaCards.forEach(card => {
-                card.style.display = 'none';
-            });
-
-            //Se houver chamados abertos, mostrar os cards
-            if(chamadosAbertos){
-                consultaCards.forEach(card => {
-                    card.style.display = 'block';
-                });
-            }
-        }
-    </script>
 </body>
 </html>

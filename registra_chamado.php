@@ -15,7 +15,7 @@
 
     //função nativa para abrir arquivo de texto (ou criar caso ainda não exista), para o registro de chamadas
     //fopen é open file or url
-    $arquivo = fopen('arquivo.txt', 'a'); //primeiro parâmetro = nome do arquivo.extensão, segundo parâmetro = modo (se apenas leitura 'r', se apenas escrita 'a')
+    $arquivo = fopen('arquivo.hd', 'a'); //primeiro parâmetro = nome do arquivo.extensão, segundo parâmetro = modo (se apenas leitura 'r', se apenas escrita 'a')
 
     //função nativa para escrever o texto no arquivo
     fwrite($arquivo, $texto); //1º parâmetro = referência do arquivo que abrimos/ 2º parâmetro = o que eu quero escrever dentro do arquivo
