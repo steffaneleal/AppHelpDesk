@@ -1,4 +1,8 @@
 <?php 
+
+    //FALANDO SOBRE SEGURANÇA NO BACK-END DE APLICAÇÕES WEB
+    // require "../../app_help_desk/valida_login.php"; é o certo a se fazer para tirar as informações sigilosas do diretório público do servidor (colocar os dois documentos de informações sigilosas - valida_login.php e arquivo.hd - e colocar em uma outra pasta fora do diretório público)
+
     //iniciando o recurso de sessão
     session_start(); //importante que seja executado sempre antes de alguma instrução que emita alguma saída de dados para o navegador (tipo o echo) 
 

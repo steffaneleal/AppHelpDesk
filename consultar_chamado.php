@@ -5,6 +5,7 @@
     $chamados = array();
 
     //abrir o arquivo.hd
+    //assim como no valida_login.php, o certo seria $arquivo = fopen('../../app_help_desk/arquivo.hd', 'r');
     $arquivo = fopen('arquivo.hd', 'r'); //mudamos o parâmetro de 'a' para 'r' pq aqui queremos apenas ler
 
     //enquanto houver registros (linhas) a serem recuperados
