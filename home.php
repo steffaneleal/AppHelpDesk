@@ -25,8 +25,8 @@
                 <h2>Menu</h2>
             </div>
             <div class="menu-cards">
-                <a href="abrir-chamado.php"><img src="assets/formulario_abrir_chamado.png" alt="Abrir Chamado"></a>
-                <a href="consultar-chamado.php"><img src="assets/formulario_consultar_chamado.png" alt="Consultar Chamado"></a>
+                <a href="abrir_chamado.php"><img src="assets/formulario_abrir_chamado.png" alt="Abrir Chamado"></a>
+                <a href="consultar_chamado.php"><img src="assets/formulario_consultar_chamado.png" alt="Consultar Chamado"></a>
             </div>
         </section>
     </main>
