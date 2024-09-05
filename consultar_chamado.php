@@ -48,15 +48,23 @@
                     <?php
                         $chamado_dados = explode('#', $chamado);
 
+                        //lógica para caso o perfil não seja admnistrativo
+                        if($_SESSION['perfil_id'] == 2){
+                            //só vamos exibir o chamado se ele for criado pelo usuário
+                            if($_SESSION['id'] != $chamado_dados[0]){ 
+                                continue; // continua para a próxima parte do código
+                            }
+                        }
+
                         if(count($chamado_dados) < 3){
                             continue;
                         }
                     ?>
                     <div class="consulta-card">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $chamado_dados[0]?></h5>
-                            <h6 class="card-subtitle"><?php echo $chamado_dados[1]?></h6>
-                            <p class="card-text"><?php echo $chamado_dados[2]?></p>
+                            <h5 class="card-title"><?php echo $chamado_dados[1]?></h5> <!-- aqui não começa no índice 0 pq o 0 agora contém os ids -->
+                            <h6 class="card-subtitle"><?php echo $chamado_dados[2]?></h6>
+                            <p class="card-text"><?php echo $chamado_dados[3]?></p>
                         </div>
                     </div>
 

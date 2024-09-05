@@ -1,4 +1,8 @@
-<?php require_once("validador_acesso.php"); ?>
+<?php require_once("validador_acesso.php"); 
+
+    //sempre que usamos alguma coisa com $_SESSION precisamos iniciar a sessão com session_start(), mas nesse caso não é necessário pq a gente inicia uma sessão em validador_acesso.php, que está sendo requerido nesse script
+    //print_r($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
